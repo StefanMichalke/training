@@ -1,0 +1,181 @@
+/**
+define the css variables
+*/
+:root {
+    --eon-red: #EA1B0A;
+    --eon-bordeaux: #B00402;
+    --eon-limeyellow: #E3E000;
+    --eon-turqeouise: #1EA2B1;
+    --eon-lightgrey: #E8E8E8;
+    --eon-red--active: #D51607;
+    --eon-bordeaux--active: #A00311;
+    --eon-limeyellow--avtive: #DAD600;
+    --eon-turquoise--active: #2B91A3;
+    --eon-lightgrey--active: #D1D1D1;
+    --eon-middlegrey--active: #727475;
+    --eon-darkgrey--active: #404040;
+}
+
+body {
+    font-family: EONBrixSans, Arial, Geneva, Helvetica, sans-serif;
+    line-height: 100%;
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/**
+define header
+*/
+header {
+    background-color: whitesmoke;
+    padding: 5px 20px 5px 20px;
+}
+
+h1 {
+    font-weight: 700;
+    text-align: center;
+    line-height: 110%;
+
+}
+
+header > nav > ul {
+    text-align: center;
+}
+
+header ul#navigationsleiste > li {
+    display: inline; /* li nebeinander anzeigen */
+    list-style-type: none; /* ohne aufzählungspunkte */
+    margin: 9px;
+    padding: 4px;
+    border: thin solid grey;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-inline-end: grey;
+}
+
+header ul#navigationsleiste > li.active {
+    background-color: var(--eon-lightgrey--active);
+}
+
+/**
+general elements (links, headline, etc.)
+*/
+a:link, a:visited {
+    text-decoration: none;
+    color: #727dff;
+}
+
+a:link:hover, a:visited:hover,
+header ul#navigationsleiste > li:hover {
+    background-color: var(--eon-lightgrey--active);
+
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+h1 {
+    color: #727dff;
+}
+
+/**
+define article
+*/
+article {
+    padding: 25px;
+    max-width: 1200px;
+}
+
+article a:link:hover, a:visited:hover {
+    text-decoration: underline;
+}
+
+/** Table */
+table, th, td {
+    border: thin solid;
+}
+
+#coll {
+    border-collapse: collapse;
+}
+
+#sepa {
+    border-collapse: separate;
+    margin-top: 2em
+}
+
+caption {
+    text-align: right;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0.2em;
+}
+
+th, td {
+    padding: .2em .5em;
+    border-radius: .1em;
+}
+
+thead th {
+    background-color: white;
+    color: black;
+}
+
+td {
+    text-align: right;
+    box-shadow: inset 1px 3px 5px -3px rgba(0, 0, 0, .5);
+}
+
+td:empty {
+    box-shadow: none;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--eon-lightgrey);
+}
+
+tbody tr:hover, tbody tr:nth-child(even):hover {
+    background-color: var(--eon-lightgrey--active);
+}
+
+header nav {
+    width: 100%;
+}
+
+header > nav > ul{
+    display: flex;
+    flex-direction: row;
+}
+header > nav > ul > li {
+    display: inline; /* li nebeinander anzeigen */
+    list-style-type: none; /* ohne aufzählungspunkte */
+    width: 20%;
+}
+header nav .submenu {
+    visibility: hidden;
+    height: 15px;
+    z-index: 1000;
+    margin-top: 12px;
+}
+
+header nav .submenu li {
+    display: block;
+    width: 6em;
+}
+
+header nav li:hover .submenu,
+header nav li:active .submenu,
+header nav li:focus .submenu {
+    visibility: visible;
+    height: auto;
+}
+
+
+
+
+
+
