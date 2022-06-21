@@ -28,25 +28,44 @@
 </head>
 
 <body>
-<eon-ui-navigation-main slot="main">
-    <eon-ui-navigation-column content-alignment="left" grow="true" grow-mobile="true">
-        <eon-ui-navigation-main-link current="true" text="T-shirts"
-                                     href="../index_Tag_3.html"></eon-ui-navigation-main-link>
-        <eon-ui-navigation-main-link text="Pullover" href="../index_Tag_4.html"></eon-ui-navigation-main-link>
-        <eon-ui-navigation-main-link text="Hosen" href="../index_Tag_5.html"></eon-ui-navigation-main-link>
-        <eon-ui-navigation-main-link text="Schmuck" href="../index_Tag_6.html"></eon-ui-navigation-main-link>
-        <eon-ui-navigation-main-link text="Schuhe" href="../index_Tag_7.html"></eon-ui-navigation-main-link>
-    </eon-ui-navigation-column>
-    <eon-ui-navigation-column content-alignment="right" grow="false">
-        <eon-ui-navigation-main-icon-link icon="smartphone"
-                                          href="https://www.eon.com"></eon-ui-navigation-main-icon-link>
-        <eon-ui-navigation-main-icon-link icon="search" href="https://www.eon.com"></eon-ui-navigation-main-icon-link>
-        <eon-ui-navigation-main-icon-link icon="user" href="https://www.eon.com"></eon-ui-navigation-main-icon-link>
-    </eon-ui-navigation-column>
-    <eon-ui-navigation-column content-alignment="right" grow="false">
-        <eon-ui-navigation-logo image-src="../images/logo.png" description="E.ON Logo"></eon-ui-navigation-logo>
-    </eon-ui-navigation-column>
-</eon-ui-navigation-main>
+<eon-ui-navigation sticky="true" sticky-level="main">
+    <eon-ui-navigation-main slot="main">
+        <eon-ui-navigation-column content-alignment="left" grow="true" grow-mobile="true">
+            <eon-ui-navigation-main-link current="true" text="T-shirts"
+                                         sub-nav-rel="main-sub-t-shirts"></eon-ui-navigation-main-link>
+            <eon-ui-navigation-main-link text="Pullover" href="../index_Tag_4.html"></eon-ui-navigation-main-link>
+            <eon-ui-navigation-main-link text="Hosen" href="../index_Tag_5.html"></eon-ui-navigation-main-link>
+            <eon-ui-navigation-main-link text="Schmuck" href="../index_Tag_6.html"></eon-ui-navigation-main-link>
+            <eon-ui-navigation-main-link text="Schuhe" href="../index_Tag_7.html"></eon-ui-navigation-main-link>
+        </eon-ui-navigation-column>
+        <eon-ui-navigation-column content-alignment="right" grow="false">
+            <eon-ui-navigation-main-icon-link icon="smartphone"
+                                              href="https://www.eon.com"></eon-ui-navigation-main-icon-link>
+            <eon-ui-navigation-main-icon-link icon="search"
+                                              href="https://www.eon.com"></eon-ui-navigation-main-icon-link>
+            <eon-ui-navigation-main-icon-link icon="user" href="https://www.eon.com"></eon-ui-navigation-main-icon-link>
+        </eon-ui-navigation-column>
+        <eon-ui-navigation-column content-alignment="right" grow="false">
+            <eon-ui-navigation-logo image-src="../images/logo.png" description="E.ON Logo"></eon-ui-navigation-logo>
+        </eon-ui-navigation-column>
+
+
+    </eon-ui-navigation-main>
+    <eon-ui-grid-control slot="main-sub" id="main-sub-t-shirts">
+        <eon-ui-grid-control-column slot="column-1">
+            <eon-ui-navigation-flyout-link href="../index_Tag_3.html" large=""
+                                           target="_self" text="T-Shirts">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="../index_Tag_3.html" text="Nike"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="../index_Tag_3.html" text="Nike"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+
+        </eon-ui-grid-control-column>
+    </eon-ui-grid-control>
+</eon-ui-navigation>
 
 
 <eon-ui-section background-color="ultralightgrey">
