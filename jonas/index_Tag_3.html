@@ -1,124 +1,215 @@
-<!doctype html>
-<html lang="de">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>J.B Clothes 2</title>
-    <link rel="stylesheet" type="text/css" href="https://web-ui.eon.com/cdn/font-brixsans/2.0.0/index.css">
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>J.B Clothes - Web-Components</title>
+
+    <!-- E.ON UI Components -->
+    <script
+            type="module"
+            src="https://web-ui.eon.com/cdn/components/3.6.2/eon/eon-ui-components/eon-ui-components.esm.js"
+    ></script>
+    <script
+            nomodule=""
+            src="https://web-ui.eon.com/cdn/components/3.6.2/eon/eon-ui-components/eon-ui-components.js"
+    ></script>
+
+    <!-- E.ON WebFont -->
+    <link rel="stylesheet" type="text/css" href="https://web-ui.eon.com/cdn/fonts/2.0.0/index.css"/>
+
+    <!-- E.ON UI CSS Variables -->
+    <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://web-ui.eon.com/cdn/components/3.6.2/eon/eon-ui-components/eon-ui-components.css"
+    />
 </head>
+
 <body>
-<header>
-    <h1>T-shirts</h1>
-    <nav>
-        <ul id="navigationsleiste">
-            <li><a href="index_Tag_3.html">T-shirts</a>
-                <ul class="submenu">
-                    <li><a href="index_Tag_3.html">Nike</a></li>
-                    <li><a href="index_Tag_3.html">Adidas</a></li>
-                    <li><a href="index_Tag_3.html">Lacoste</a></li>
-                </ul>
-            </li>
-
-            <li><a href="index_Tag_4.html">Pullover</a>
-                <ul class="submenu">
-                    <li><a href="index_Tag_4.html">Ellese</a></li>
-                    <li><a href="index_Tag_4.html">S Oliver</a></li>
-                    <li><a href="index_Tag_4.html">Tommy Hilfiger</a></li>
-                </ul>
-            </li>
-            <li><a href="index_Tag_5.html">Hosen</a>
-                <ul class="submenu">
-                    <li><a href="index_Tag_5.html">Levi s</a></li>
-                    <li><a href="index_Tag_5.html">Tommy Hilfiger</a></li>
-                    <li><a href="index_Tag_5.html">America Today</a></li>
-                </ul>
-            </li>
-            <li><a href="index_Tag_6.html">Schmuck</a>
-                <ul class="submenu">
-                    <li><a href="index_Tag_6.html">Bijou Brigitte</a></li>
-                    <li><a href="index_Tag_6.html">Urban Classics</a></li>
-                    <li><a href="index_Tag_6.html">River Island</a></li>
-                </ul>
-            </li>
-            <li><a href="index_Tag_7.html">Schuhe</a>
-                <ul class="submenu">
-                    <li><a href="index_Tag_7.html">Jordan</a></li>
-                    <li><a href="index_Tag_7.html">Nike</a></li>
-                    <li><a href="index_Tag_7.html">Adidas</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-</header>
-<article>
-    <fieldset>
-        <legend>Wählen sie zwischen ihrer Größe und Farbe:</legend>
-        <input type="button" name="Größe" value="XS" id="check1">
-        <label for="check1"></label>
-        <input type="button" name="Größe" value="S" id="check2">
-        <label for="check2"></label>
-        <input type="button" name="Größe" value="M" id="check3">
-        <label for="check3"></label>
-        <input type="button" name="Größe" value="L" id="check4">
-        <label for="check4"></label>
-        <input type="button" name="Größe" value="XL" id="check5">
-        <label for="check5"></label>
-        <p></p>
-        <input type="color" name="Farbe" value="Rot" id="check6">
-        <label for="check6"></label>
-        <input type="color" name="Farbe" value="Blau" id="check7">
-        <label for="check7"></label>
-        <input type="color" name="Farbe" value="Schwarz" id="check8">
-        <label for="check8"></label>
-    </fieldset>
-    <p><b>Marke Nike:</b></p>
-    <ol>
-        <li><a target="_blank" rel="nofollow" href="https://www.zalando.de/nike-sportswear-club-tee-t-shirt-basic-ni122o0ce-a11.html">Günstigste
-            Alternative</a></li>
-        <li><a target="_blank" rel="nofollow" href="https://www.zalando.de/nike-sportswear-tee-t-shirt-basic-mint-ni122o0rh-m12.html">Durschnitt</a>
-        </li>
-        <li><a target="_blank" rel="nofollow" href="https://www.zalando.de/nike-sportswear-club-tee-t-shirt-basic-ni122o0ce-g12.html">Durschnitt</a>
-        </li>
-        <li><a target="_blank" rel="nofollow" href="https://www.zalando.de/nike-sportswear-open-tee-t-shirt-print-black-ni122o0sn-q11.html">Teuerste
-            Alternative</a></li>
-    </ol>
-    <p><b>Marke Adidas:</b></p>
-    <ol>
-        <li><a target="_blank" rel="nofollow" href="https://www.zalando.de/adidas-originals-essential-tee-unisex-t-shirt-basic-white-ad1210015-a11.html">Günstigste
-            Alternative</a></li>
-        <li><a target="_blank" rel="nofollow" href="https://www.zalando.de/adidas-originals-3-stripes-tee-unisex-t-shirt-print-white-ad1210016-a11.html">Durschnitt</a>
-        </li>
-        <li><a target="_blank" rel="nofollow" href="https://www.zalando.de/adidas-originals-essential-tee-unisex-t-shirt-basic-purple-ad1210015-i12.html">Durschnitt</a>
-        </li>
-        <li><a target="_blank" rel="nofollow" href="https://www.zalando.de/adidas-originals-tee-t-shirt-print-white-ad122o0ph-a11.html">Teuerste
-            Alternative</a></li>
-    </ol>
-    <p><b>Marke Lacoste:</b></p>
-    <ol>
-        <li><a target="_blank" rel="nofollow" href="https://www.zalando.de/lacoste-t-shirt-basic-panorama-la222o02e-k16.html">Günstigste
-            Alternative</a></li>
-        <li><a target="_blank" rel="nofollow" href="https://www.zalando.de/lacoste-live-unisex-t-shirt-basic-rose-l4721002l-j11.html">Durschnitt</a>
-        </li>
-        <li><a target="_blank" rel="nofollow" href="https://www.zalando.de/lacoste-sport-big-logo-funktionsshirt-blackwhite-l0642d06f-q11.html">Durschnitt</a>
-        </li>
-        <li><a target="_blank" rel="nofollow" href="https://www.zalando.de/lacoste-unisex-t-shirt-basic-white-la221000o-a11.html">Teuerste
-            alternative</a></li>
-    </ol>
-    <p>Hier finden sie nochmal unsere besten Angebote</p>
-    <ol>
-        <li><a target="_blank" rel="nofollow" href="https://www.zalando.de/jordan-jumpman-crew-t-shirt-basic-whiteblack-joc22o04b-a11.html">Jordan
-            T-shirt</a></li>
-        <li><a target="_blank" rel="nofollow" href="https://www.zalando.de/weekday-oversized-t-shirt-basic-light-blue-web22o056-k12.html">Weekday
-            T-shirt</a></li>
-        <li><a target="_blank" rel="nofollow" href="https://www.zalando.de/polo-ralph-lauren-t-shirt-basic-black-po222o06x-q11.html">Polo Ralph
-            Lauren</a></li>
-    </ol>
-    <p>Bei weiteren Fragen rufen sie uns an oder schreiben uns eine Email <a href="index_Tag_2.html">Zurück zur
-        Startseite</a></p>
-</article>
-</body>
-</html>
+<eon-ui-navigation sticky="true" sticky-level="main">
+    <eon-ui-navigation-main slot="main">
+        <eon-ui-navigation-column content-alignment="left" grow="true" grow-mobile="true">
+            <eon-ui-navigation-main-link text="Startseite"
+                                         sub-nav-rel="main-sub-Startseite"></eon-ui-navigation-main-link>
+            <eon-ui-navigation-main-link current="true" text="T-shirt" href="../index_Tag_3.html"
+                                         sub-nav-rel="main-sub-T-shirt"></eon-ui-navigation-main-link>
+            <eon-ui-navigation-main-link text="Pullover" href="../index_Tag_4.html"
+                                         sub-nav-rel="main-sub-pullover"></eon-ui-navigation-main-link>
+            <eon-ui-navigation-main-link text="Hosen" href="../index_Tag_5.html"
+                                         sub-nav-rel="main-sub-hosen"></eon-ui-navigation-main-link>
+            <eon-ui-navigation-main-link text="Schmuck" href="../index_Tag_6.html"
+                                         sub-nav-rel="main-sub-schmuck"></eon-ui-navigation-main-link>
+            <eon-ui-navigation-main-link text="Schuhe" href="../index_Tag_7.html"
+                                         sub-nav-rel="main-sub-schuhe"></eon-ui-navigation-main-link>
+        </eon-ui-navigation-column>
+        <eon-ui-navigation-column content-alignment="right" grow="false">
+            <eon-ui-navigation-main-icon-link icon="smartphone"
+                                              href="https://www.eon.com"></eon-ui-navigation-main-icon-link>
+            <eon-ui-navigation-main-icon-link icon="search"
+                                              href="https://www.eon.com"></eon-ui-navigation-main-icon-link>
+            <eon-ui-navigation-main-icon-link icon="user"
+                                              href="https://www.eon.com"></eon-ui-navigation-main-icon-link>
+        </eon-ui-navigation-column>
+        <eon-ui-navigation-column content-alignment="right" grow="false">
+            <eon-ui-navigation-logo image-src="../images/logo.png"
+                                    description="E.ON Logo"></eon-ui-navigation-logo>
+        </eon-ui-navigation-column>
 
 
+    </eon-ui-navigation-main>
+    <!-- Flyout Startseite START -->
+    <eon-ui-grid-control slot="main-sub" id="main-sub-Startseite">
+        <eon-ui-grid-control-column slot="column-1">
+            <eon-ui-navigation-flyout-link large=""
+                                           target="_self" text="Startseite">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="webcomponents/index.html" text="Startseite"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="index_Tag_8.html" text="FAQ"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+        </eon-ui-grid-control-column>
+    </eon-ui-grid-control>
+    <!-- Flyout Startseite END -->
 
+    <!-- Flyout T-shirt START -->
+    <eon-ui-grid-control slot="main-sub" id="main-sub-T-shirt">
+        <eon-ui-grid-control-column slot="column-1">
+            <eon-ui-navigation-flyout-link large=""
+                                           target="_self" text="T-shirt">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="index_Tag_3.html" text="Nike"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="index_Tag_3.html" text="Adidas"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="index_Tag_3.html" text="Lacoste"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+        </eon-ui-grid-control-column>
+    </eon-ui-grid-control>
+    <!-- Flyout T-shirt END -->
+
+    <!-- Flyout Pullover START -->
+    <eon-ui-grid-control slot="main-sub" id="main-sub-pullover">
+        <eon-ui-grid-control-column slot="column-1">
+            <eon-ui-navigation-flyout-link large=""
+                                           target="_self" text="Pullover">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="index_Tag_4.html" text="Ellese"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="index_Tag_4.html" text="Adidas"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="index_Tag_4.html" text="Lacoste"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+
+        </eon-ui-grid-control-column>
+    </eon-ui-grid-control>
+    <!-- Flyout Pullover END -->
+
+    <!-- Flyout Hosen START -->
+    <eon-ui-grid-control slot="main-sub" id="main-sub-hosen">
+        <eon-ui-grid-control-column slot="column-1">
+            <eon-ui-navigation-flyout-link large=""
+                                           target="_self" text="Hosen">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="index_Tag_5.html" text="Levis"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="index_Tag_5.html" text="Adidas"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="index_Tag_5.html" text="Lacoste"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+
+        </eon-ui-grid-control-column>
+    </eon-ui-grid-control>
+    <!-- Flyout Hosen END -->
+
+    <!-- Flyout Schmuck START -->
+    <eon-ui-grid-control slot="main-sub" id="main-sub-schmuck">
+        <eon-ui-grid-control-column slot="column-1">
+            <eon-ui-navigation-flyout-link large=""
+                                           target="_self" text="Schmuck">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="index_Tag_6.html" text="Bijou Brigitte"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="index_Tag_6.html" text="Adidas"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="index_Tag_6.html" text="Lacoste"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+
+        </eon-ui-grid-control-column>
+    </eon-ui-grid-control>
+    <!-- Flyout Schmuck END -->
+
+    <!-- Flyout Schuhe START -->
+    <eon-ui-grid-control slot="main-sub" id="main-sub-schuhe">
+        <eon-ui-grid-control-column slot="column-1">
+            <eon-ui-navigation-flyout-link large=""
+                                           target="_self" text="Schuhe">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="index_Tag_7.html" text="Jordan"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="index_Tag_7.html" text="Adidas"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="index_Tag_7.html" text="Lacoste"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+
+        </eon-ui-grid-control-column>
+    </eon-ui-grid-control>
+    <!-- Flyout Schuhe END -->
+</eon-ui-navigation>
+
+
+<eon-ui-section background-color="ultralightgrey">
+    <eon-ui-grid-control>
+        <eon-ui-grid-control-column slot="column-1">
+            <eon-ui-page-header
+                    scheme="limeyellow"
+                    show-content="true"
+                    headline-position="top"
+                    contrast-bars="true"
+                    color-bars="true"
+                    color-bar-offset="true">
+                <eon-ui-headline slot="header-headline" scheme="red" size="h1" text="T-shirts"
+                                 color-bars="bordeaux"></eon-ui-headline>
+                <eon-ui-text slot="header-content" text-style="abstract">Entdecken sie die besten Nike Angebote
+                </eon-ui-text>
+                <eon-ui-headline slot="header-subheadline" size="h4" text="Nike"></eon-ui-headline>
+            </eon-ui-page-header>
+            <eon-ui-bullet-list icon-name="radio_checkbox_tick">
+                <eon-ui-bullet-list-item role="listitem">
+                    <eon-ui-rte-renderer slot="html-text" rte-source="aem" content='<a target="_blank" rel="nofollow"
+                    href="https://www.zalando.de/levis-512-slim-taper-jeans-slim-fit-medium-indigo-worn-in-le222g07j-k25.html">Günstigste Alternative</a>'></eon-ui-rte-renderer>
+                </eon-ui-bullet-list-item>
+                <eon-ui-bullet-list-item role="listitem">
+                    <eon-ui-rte-renderer slot="html-text" rte-source="aem" content='<a target="_blank" rel="nofollow"
+                    href="https://www.zalando.de/levis-512-slim-taper-jeans-slim-fit-medium-indigo-worn-in-le222g07j-k25.html">Durschnitt</a>'></eon-ui-rte-renderer>
+                </eon-ui-bullet-list-item>
+                <eon-ui-bullet-list-item role="listitem">
+                    <eon-ui-rte-renderer slot="html-text" rte-source="aem" content='<a target="_blank" rel="nofollow"
+                    href="https://www.zalando.de/levis-512-slim-taper-jeans-slim-fit-medium-indigo-worn-in-le222g07j-k25.html">Teuerste
+                    Alternative</a>'></eon-ui-rte-renderer>
+
+                </eon-ui-bullet-list-item>
+            </eon-ui-bullet-list>
+
+        </eon-ui-grid-control-column>
+    </eon-ui-grid-control>
+</eon-ui-section>
 
