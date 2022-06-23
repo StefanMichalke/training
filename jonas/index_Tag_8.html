@@ -1,2 +1,197 @@
-hfhgfghfhfhfghfh
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>J.B Clothes - Web-Components</title>
 
+    <!-- E.ON UI Components -->
+    <script
+            type="module"
+            src="https://web-ui.eon.com/cdn/components/3.6.2/eon/eon-ui-components/eon-ui-components.esm.js"
+    ></script>
+    <script
+            nomodule=""
+            src="https://web-ui.eon.com/cdn/components/3.6.2/eon/eon-ui-components/eon-ui-components.js"
+    ></script>
+
+    <!-- E.ON WebFont -->
+    <link rel="stylesheet" type="text/css" href="https://web-ui.eon.com/cdn/fonts/2.0.0/index.css"/>
+
+    <!-- E.ON UI CSS Variables -->
+    <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://web-ui.eon.com/cdn/components/3.6.2/eon/eon-ui-components/eon-ui-components.css"
+    />
+</head>
+
+<body>
+<eon-ui-navigation sticky="true" sticky-level="main">
+    <eon-ui-navigation-main slot="main">
+        <eon-ui-navigation-column content-alignment="left" grow="true" grow-mobile="true">
+            <eon-ui-navigation-main-link current="true" text="Startseite"
+                                         sub-nav-rel="main-sub-Startseite"></eon-ui-navigation-main-link>
+            <eon-ui-navigation-main-link text="T-shirt" href="../index_Tag_3.html"
+                                         sub-nav-rel="main-sub-T-shirt"></eon-ui-navigation-main-link>
+            <eon-ui-navigation-main-link text="Pullover" href="../index_Tag_4.html"
+                                         sub-nav-rel="main-sub-pullover"></eon-ui-navigation-main-link>
+            <eon-ui-navigation-main-link text="Hosen" href="../index_Tag_5.html"
+                                         sub-nav-rel="main-sub-hosen"></eon-ui-navigation-main-link>
+            <eon-ui-navigation-main-link text="Schmuck" href="../index_Tag_6.html"
+                                         sub-nav-rel="main-sub-schmuck"></eon-ui-navigation-main-link>
+            <eon-ui-navigation-main-link text="Schuhe" href="../index_Tag_7.html"
+                                         sub-nav-rel="main-sub-schuhe"></eon-ui-navigation-main-link>
+        </eon-ui-navigation-column>
+        <eon-ui-navigation-column content-alignment="right" grow="false">
+            <eon-ui-navigation-main-icon-link icon="smartphone"
+                                              href="https://www.eon.com"></eon-ui-navigation-main-icon-link>
+            <eon-ui-navigation-main-icon-link icon="search"
+                                              href="https://www.eon.com"></eon-ui-navigation-main-icon-link>
+            <eon-ui-navigation-main-icon-link icon="user"
+                                              href="https://www.eon.com"></eon-ui-navigation-main-icon-link>
+        </eon-ui-navigation-column>
+        <eon-ui-navigation-column content-alignment="right" grow="false">
+            <eon-ui-navigation-logo image-src="../images/logo.png"
+                                    description="E.ON Logo"></eon-ui-navigation-logo>
+        </eon-ui-navigation-column>
+
+
+    </eon-ui-navigation-main>
+    <!-- Flyout Startseite START -->
+    <eon-ui-grid-control slot="main-sub" id="main-sub-Startseite">
+        <eon-ui-grid-control-column slot="column-1">
+            <eon-ui-navigation-flyout-link large=""
+                                           target="_self" text="Startseite">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="webcomponents/index.html" text="Startseite"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="index_Tag_8.html" text="FAQ"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+        </eon-ui-grid-control-column>
+    </eon-ui-grid-control>
+    <!-- Flyout Startseite END -->
+
+    <!-- Flyout T-shirt START -->
+    <eon-ui-grid-control slot="main-sub" id="main-sub-T-shirt">
+        <eon-ui-grid-control-column slot="column-1">
+            <eon-ui-navigation-flyout-link large=""
+                                           target="_self" text="T-shirt">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="index_Tag_3.html" text="Nike"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="index_Tag_3.1.html" text="Adidas"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="index_Tag_3.2.html" text="Lacoste"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+        </eon-ui-grid-control-column>
+    </eon-ui-grid-control>
+    <!-- Flyout T-shirt END -->
+
+    <!-- Flyout Pullover START -->
+    <eon-ui-grid-control slot="main-sub" id="main-sub-pullover">
+        <eon-ui-grid-control-column slot="column-1">
+            <eon-ui-navigation-flyout-link large=""
+                                           target="_self" text="Pullover">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="index_Tag_4.html" text="Ellese"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="index_Tag_4.1.html" text="Adidas"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="index_Tag_4.2.html" text="Tommy Hilfiger"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+
+        </eon-ui-grid-control-column>
+    </eon-ui-grid-control>
+    <!-- Flyout Pullover END -->
+
+    <!-- Flyout Hosen START -->
+    <eon-ui-grid-control slot="main-sub" id="main-sub-hosen">
+        <eon-ui-grid-control-column slot="column-1">
+            <eon-ui-navigation-flyout-link large=""
+                                           target="_self" text="Hosen">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="index_Tag_5.html" text="Levis"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="index_Tag_5.1.html" text="Jaded London"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="index_Tag_5.html" text="Jack&Jones"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+
+        </eon-ui-grid-control-column>
+    </eon-ui-grid-control>
+    <!-- Flyout Hosen END -->
+
+    <!-- Flyout Schmuck START -->
+    <eon-ui-grid-control slot="main-sub" id="main-sub-schmuck">
+        <eon-ui-grid-control-column slot="column-1">
+            <eon-ui-navigation-flyout-link large=""
+                                           target="_self" text="Schmuck">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="index_Tag_6.html" text="Bijou Brigitte"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="index_Tag_6.1.html" text="Rolex"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="index_Tag_6.2.html" text="RayBam"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+
+        </eon-ui-grid-control-column>
+    </eon-ui-grid-control>
+    <!-- Flyout Schmuck END -->
+
+    <!-- Flyout Schuhe START -->
+    <eon-ui-grid-control slot="main-sub" id="main-sub-schuhe">
+        <eon-ui-grid-control-column slot="column-1">
+            <eon-ui-navigation-flyout-link large=""
+                                           target="_self" text="Schuhe">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="index_Tag_7.html" text="Jordan"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="index_Tag_7.1.html" text="Nike"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="index_Tag_7.2.html" text="Adidas"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+
+        </eon-ui-grid-control-column>
+    </eon-ui-grid-control>
+    <!-- Flyout Schuhe END -->
+</eon-ui-navigation>
+
+
+<eon-ui-section background-color="ultralightgrey">
+    <eon-ui-grid-control>
+        <eon-ui-grid-control-column slot="column-1">
+            <eon-ui-page-header
+                    scheme="red"
+                    show-content="true"
+                    headline-position="top"
+                    contrast-bars="true"
+                    color-bars="true"
+                    color-bar-offset="true">
+                <eon-ui-headline slot="header-headline" scheme="red" size="h1" text="FAQ"
+                                 color-bars="bordeaux"></eon-ui-headline>
+                <eon-ui-text slot="header-content" text-style="abstract">Hier finden sie alle Antworten zu möglichen Fragen
+                </eon-ui-text>
+                <eon-ui-headline slot="header-subheadline" size="h4" text="Über uns:"></eon-ui-headline>
+            </eon-ui-page-header>
+        </eon-ui-grid-control-column>
+    </eon-ui-grid-control>
+</eon-ui-section>
