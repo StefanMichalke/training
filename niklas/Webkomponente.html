@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Using E.ON UI on a static HTML page</title>
+    <link rel="icon" href="https://seeklogo.com/images/E/E_ON-logo-30694E2407-seeklogo.com.png">
+
+    <!-- E.ON UI Components -->
+    <script
+      type="module"
+      src="https://web-ui.eon.com/cdn/components/3.6.2/eon/eon-ui-components/eon-ui-components.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://web-ui.eon.com/cdn/components/3.6.2/eon/eon-ui-components/eon-ui-components.js"
+    ></script>
+
+    <!-- E.ON WebFont -->
+    <link rel="stylesheet" type="text/css" href="https://web-ui.eon.com/cdn/fonts/1.0.0/index.css" />
+
+    <!-- E.ON UI CSS Variables -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://web-ui.eon.com/cdn/components/3.6.2/eon/eon-ui-components/eon-ui-components.css"
+    />
+  </head>
+
+  <body>
+    <eon-ui-navigation-toolbar slot="toolbar">
+        <eon-ui-navigation-column content-alignment="right" grow="true", "grow-mobile": "true">
+          <eon-ui-navigation-toolbar-icon-link text="Contact" icon="smartphone" href="https://www.eon.com"></eon-ui-navigation-toolbar-icon-link>
+          <eon-ui-navigation-toolbar-icon-link text="Search" icon="search" href="https://www.eon.com"></eon-ui-navigation-toolbar-icon-link>
+          <eon-ui-navigation-toolbar-icon-link text="Login" icon="user" href="https://www.eon.com"></eon-ui-navigation-toolbar-icon-link>
+        </eon-ui-navigation-column>
+      </eon-ui-navigation-toolbar>
+    <eon-ui-section> <eon-ui-headline text="Let’s create a better tomorrow today" size="h2">
+
+  </eon-ui-headline>
+</eon-ui-section>
+    <eon-ui-section background-color="red">
+        <eon-ui-grid-control grid="grid__d6-6__t6-6" same-height="true">
+            <eon-ui-grid-control-column slot="column-1">
+                <eon-ui-image
+                src="https://www.psdstack.com/wp-content/uploads/2019/08/copyright-free-images-750x420.jpg"
+                alt="Image 1"
+                title="Image 1"
+              ></eon-ui-image> 
+            </eon-ui-grid-control-column>
+            <eon-ui-grid-control-column slot="column-2">
+                <eon-ui-image
+                src="https://www.psdstack.com/wp-content/uploads/2016/10/pexels-7.jpg"
+                alt="Image 2"
+                title="Image 2"
+                height="323px"
+              ></eon-ui-image> 
+            </eon-ui-grid-control-column>
+        </eon-ui-grid-control>
+        <eon-ui-grid-control grid="grid__d6-6__t6-6">
+            <eon-ui-grid-control-column slot="column-1">
+                <eon-ui-image
+                src="https://www.psdstack.com/wp-content/uploads/2016/10/unsplash-4.jpg"
+                alt="Image 3"
+                title="Image 3"
+              ></eon-ui-image> 
+            </eon-ui-grid-control-column>
+            <eon-ui-grid-control-column slot="column-2">
+                <eon-ui-image
+                src="https://www.psdstack.com/wp-content/uploads/2016/10/lifeofpix-11.jpg"
+                alt="Image 4"
+                title="Image 4"
+                height="320px"
+              ></eon-ui-image> 
+            </eon-ui-grid-control-column>
+        </eon-ui-grid-control>
+        
+      </eon-ui-section>
+      <eon-ui-section>
+<eon-ui-image src="/my-image.jpg" title="My image" alt="A placeholder" lazy></eon-ui-image>
+        <eon-ui-grid-control grid="grid__d6-6__t6-6" same-height="true"></eon-ui-grid-control>
+        <eon-ui-grid-control-column slot="column-1"></eon-ui-grid-control-column>
+        <eon-ui-headline text="Mein E.ON - Das erwartet Sie" size="h3"></eon-ui-headline>
+    </eon-ui-grid-control-column>
+    <eon-ui-grid-control-column slot="column-1"></eon-ui-grid-control-column>
+        <eon-ui-icon name="wifi" text="WLAN"></eon-ui-icon>
+    </eon-ui-grid-control-column>
+    </eon-ui-grid-control>
+        <eon-ui-icon name="water"></eon-ui-icon>
+      </eon-ui-section>
+      <eon-ui-section background-color="turquoise">
+        <eon-ui-button text="Button" icon="edit"></eon-ui-button>
+      </eon-ui-section>
+      <eon-ui-bottom-drawer
+                  header-text="Warum Fotovoltaik von E.ON?"
+                  close-text="Close it now"
+                  maximum-content-width=1200
+                  is-opened=false
+              ></eon-ui-bottom-drawer>
+  </body>
+</html>
