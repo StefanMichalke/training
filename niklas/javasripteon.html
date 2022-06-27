@@ -2,58 +2,64 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Using E.ON UI on a static HTML page</title>
     <link rel="icon" href="https://seeklogo.com/images/E/E_ON-logo-30694E2407-seeklogo.com.png">
 
     <!-- E.ON UI Components -->
     <script type="module"
-        src="https://web-ui.eon.com/cdn/components/3.6.2/eon/eon-ui-components/eon-ui-components.esm.js"></script>
+            src="https://web-ui.eon.com/cdn/components/3.6.2/eon/eon-ui-components/eon-ui-components.esm.js"></script>
     <script nomodule=""
-        src="https://web-ui.eon.com/cdn/components/3.6.2/eon/eon-ui-components/eon-ui-components.js"></script>
+            src="https://web-ui.eon.com/cdn/components/3.6.2/eon/eon-ui-components/eon-ui-components.js"></script>
 
     <!-- E.ON WebFont -->
-    <link rel="stylesheet" type="text/css" href="https://web-ui.eon.com/cdn/fonts/1.0.0/index.css" />
+    <link rel="stylesheet" type="text/css" href="https://web-ui.eon.com/cdn/fonts/1.0.0/index.css"/>
 
     <!-- E.ON UI CSS Variables -->
     <link rel="stylesheet" type="text/css"
-        href="https://web-ui.eon.com/cdn/components/3.6.2/eon/eon-ui-components/eon-ui-components.css" />
+          href="https://web-ui.eon.com/cdn/components/3.6.2/eon/eon-ui-components/eon-ui-components.css"/>
 </head>
 
 <body>
-    <eon-ui-section background-color="red" id="section-1">
-        <eon-ui-grid-control>
-            <eon-ui-grid-control-column slot="column-1">
-                <eon-ui-headline text="Let’s create a better tomorrow today" size="h2"> </eon-ui-headline>
-                <eon-ui-rte-renderer rte-source="aem"
-                    content='<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.!</p>'>
-                </eon-ui-rte-renderer>
-            </eon-ui-grid-control-column>
-        </eon-ui-grid-control>
-    </eon-ui-section>
-    <eon-ui-section>
-        <eon-ui-dropdown name="dropdown" label="Choose color">
-            <eon-ui-dropdown-option value="white" label="white"></eon-ui-dropdown-option>
-            <eon-ui-dropdown-option value="limeyellow" label="Limeyellow"></eon-ui-dropdown-option>
-            <eon-ui-dropdown-option value="turquoise" label="Turquoise"></eon-ui-dropdown-option>
-            <eon-ui-dropdown-option value="lightgrey" label="Lightgrey"></eon-ui-dropdown-option>
-            <eon-ui-dropdown-option value="ultralightgrey" label="Ultralightgrey"></eon-ui-dropdown-option>
-            <eon-ui-dropdown-option value="bordeaux" label="Bordeaux"></eon-ui-dropdown-option>
-            <eon-ui-dropdown-option value="red" label="Red"></eon-ui-dropdown-option>
-        </eon-ui-dropdown>
-    </eon-ui-section>
-    <script>
-        const dropdownElement = document.querySelector("eon-ui-dropdown");
-        console.log("Element: ", dropdownElement);
-        dropdownElement.addEventListener("valueChanged", (event) => {
-           console.log("Event gefeuert", event); 
-           let sectionBackgroundcolor = event.detail;
-           console.log("sectionBackground", sectionBackgroundcolor);
-           const sectionChanged = document.getElementById("section-1")
-           console.log("sectionChanged", sectionChanged);
-           sectionChanged.setAttribute("background-color", sectionBackgroundcolor);
-        });
-    </script>
+<eon-ui-section background-color="red" id="section-1">
+    <eon-ui-grid-control>
+        <eon-ui-grid-control-column slot="column-1">
+            <eon-ui-headline text="Let’s create a better tomorrow today" size="h2"></eon-ui-headline>
+            <eon-ui-rte-renderer rte-source="aem"
+                                 content='<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.!</p>'>
+            </eon-ui-rte-renderer>
+        </eon-ui-grid-control-column>
+    </eon-ui-grid-control>
+</eon-ui-section>
+<eon-ui-section>
+    <eon-ui-dropdown name="dropdown" label="Choose color">
+        <eon-ui-dropdown-option value="white" label="white"></eon-ui-dropdown-option>
+        <eon-ui-dropdown-option value="limeyellow" label="Limeyellow"></eon-ui-dropdown-option>
+        <eon-ui-dropdown-option value="turquoise" label="Turquoise"></eon-ui-dropdown-option>
+        <eon-ui-dropdown-option value="lightgrey" label="Lightgrey"></eon-ui-dropdown-option>
+        <eon-ui-dropdown-option value="ultralightgrey" label="Ultralightgrey"></eon-ui-dropdown-option>
+        <eon-ui-dropdown-option value="bordeaux" label="Bordeaux"></eon-ui-dropdown-option>
+        <eon-ui-dropdown-option value="red" label="Red"></eon-ui-dropdown-option>
+    </eon-ui-dropdown>
+</eon-ui-section>
+<script>
+    const dropdownElement = document.querySelector("eon-ui-dropdown");
+    const headline = document.querySelector("#section-1 eon-ui-headline");
+    const rteRenderer = document.querySelector("#section-1 eon-ui-rte-renderer");
+    console.log("Element: ", dropdownElement);
+    dropdownElement.addEventListener("valueChanged", (event) => {
+        console.log("Event gefeuert", event);
+        let sectionBackgroundcolor = event.detail;
+        console.log("sectionBackground", sectionBackgroundcolor);
+        const sectionChanged = document.getElementById("section-1")
+        console.log("sectionChanged", sectionChanged);
+        sectionChanged.setAttribute("background-color", sectionBackgroundcolor);
+        if (sectionBackgroundcolor === "white" ) {
+            headline.setAttribute("scheme","red")
+            rteRenderer.setAttribute("scheme","red")
+        }
+    });
+</script>
 </body>
