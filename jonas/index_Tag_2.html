@@ -1,108 +1,111 @@
-<!doctype html>
-<html lang="de">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title> J.B Clothes 1</title>
-    <link rel="stylesheet" type="text/css" href="https://web-ui.eon.com/cdn/font-brixsans/2.0.0/index.css">
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>J.B Clothes - Web-Components</title>
+
+    <!-- E.ON UI Components -->
+    <script
+            type="module"
+            src="https://web-ui.eon.com/cdn/components/3.6.2/eon/eon-ui-components/eon-ui-components.esm.js"
+    ></script>
+    <script
+            nomodule=""
+            src="https://web-ui.eon.com/cdn/components/3.6.2/eon/eon-ui-components/eon-ui-components.js"
+    ></script>
+
+    <!-- E.ON WebFont -->
+    <link rel="stylesheet" type="text/css" href="https://web-ui.eon.com/cdn/fonts/2.0.0/index.css"/>
+
+    <!-- E.ON UI CSS Variables -->
+    <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://web-ui.eon.com/cdn/components/3.6.2/eon/eon-ui-components/eon-ui-components.css"
+    />
 </head>
+
 <body>
-<header>
-    <h1>J.B Clothes</h1>
-    <nav>
-        <ul id="navigationsleiste">
-            <li><a href="index_Tag_3.html">T-shirts</a>
-                <ul class="submenu">
-                    <li><a href="index_Tag_3.html">Nike</a></li>
-                    <li><a href="index_Tag_3.html">Adidas</a></li>
-                    <li><a href="index_Tag_3.html">Lacoste</a></li>
-                </ul>
-            </li>
+<eon-ui-navigation sticky="true" sticky-level="main">
+    <eon-ui-navigation-main slot="main">
+        <eon-ui-navigation-column content-alignment="left" grow="true" grow-mobile="true">
+            <eon-ui-navigation-main-link current="true" text="T-shirts"
+                                         sub-nav-rel="main-sub-T-shirts"></eon-ui-navigation-main-link>
+            <eon-ui-navigation-main-link text="Pullover" href="../index_Tag_4.html"></eon-ui-navigation-main-link>
+            <eon-ui-navigation-main-link text="Hosen" href="../index_Tag_5.html"></eon-ui-navigation-main-link>
+            <eon-ui-navigation-main-link text="Schmuck" href="../index_Tag_6.html"></eon-ui-navigation-main-link>
+            <eon-ui-navigation-main-link text="Schuhe" href="../index_Tag_7.html"></eon-ui-navigation-main-link>
+        </eon-ui-navigation-column>
+        <eon-ui-navigation-column content-alignment="right" grow="false">
+            <eon-ui-navigation-main-icon-link icon="smartphone"
+                                              href="https://www.eon.com"></eon-ui-navigation-main-icon-link>
+            <eon-ui-navigation-main-icon-link icon="search"
+                                              href="https://www.eon.com"></eon-ui-navigation-main-icon-link>
+            <eon-ui-navigation-main-icon-link icon="user"
+                                              href="https://www.eon.com"></eon-ui-navigation-main-icon-link>
+        </eon-ui-navigation-column>
+        <eon-ui-navigation-column content-alignment="right" grow="false">
+            <eon-ui-navigation-logo image-src="../images/logo.png"
+                                    description="E.ON Logo"></eon-ui-navigation-logo>
+        </eon-ui-navigation-column>
 
-            <li><a href="index_Tag_4.html">Pullover</a>
-                <ul class="submenu">
-                    <li><a href="index_Tag_4.html">Ellese</a></li>
-                    <li><a href="index_Tag_4.html">S Oliver</a></li>
-                    <li><a href="index_Tag_4.html">Tommy Hilfiger</a></li>
-                </ul>
-            </li>
-            <li><a href="index_Tag_5.html">Hosen</a>
-                <ul class="submenu">
-                    <li><a href="index_Tag_5.html">Levi s</a></li>
-                    <li><a href="index_Tag_5.html">Tommy Hilfiger</a></li>
-                    <li><a href="index_Tag_5.html">America Today</a></li>
-                </ul>
-            </li>
-            <li><a href="index_Tag_6.html">Schmuck</a>
-                <ul class="submenu">
-                    <li><a href="index_Tag_6.html">Bijou Brigitte</a></li>
-                    <li><a href="index_Tag_6.html">Urban Classics</a></li>
-                    <li><a href="index_Tag_6.html">River Island</a></li>
-                </ul>
-            </li>
-            <li><a href="index_Tag_7.html">Schuhe</a>
-                <ul class="submenu">
-                    <li><a href="index_Tag_7.html">Jordan</a></li>
-                    <li><a href="index_Tag_7.html">Nike</a></li>
-                    <li><a href="index_Tag_7.html">Adidas</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-</header>
-<article>
-    <h2>Über uns als Firma:</h2>
-    <p>Wir als <b>J.B Clothes</b> Firma empfehlen ihnen die Besten online Website wo sie am besten einkaufen können,
-        ohne auf
-        Rabatte zu achten. Wir empfehlen ihnen bereits die beste Website mit den besten Rabatten</p>
-    <p>Unser Kundenservice steht in 24h unter folgender Nummer zur Verfügung +49 1575 465975.</p>
-    <p>Bei weiteren Fragen oder Feedback würden wir uns sehr freuen, wenn sie uns eine E-Mail an folgende E-Mail senden
-        jonasbujo@gmail.com</p>
-    <p>Zum FAQ <a href="index_Tag_8.html">FAQ über uns</a></p>
-    <p>Fangen sie bei uns an:<a href="index_Tag_9.html">Bewerbung</a></p>
-    <p>Zu unserem Partner <a target="_blank" rel="nofollow" href="https://www.zalando.de/herren-home/">Zalando</a></p>
-    <p><u><b>Ihr J.B Clothes Team, viel spaß beim Einkaufen :)</b></u></p>
-    <p>Vorteile und Nachteile des Praktikums:</p>
-    <table>
-        <thead>
-        <tr>
-            <th>Vorteile</th>
-            <th>Nachteile</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>Lernt neues</td>
-            <td>Keine Nachteile</td>
-        </tr>
-        <tr>
-            <td>Lernt neues</td>
-            <td>Keine Nachteile</td>
-        </tr>
-        <tr>
-            <td>Lernt neues</td>
-            <td>Keine Nachteile</td>
-        </tr>
-        <tr>
-            <td>Lernt neues</td>
-            <td>Keine Nachteile</td>
-        </tr>
-        </tbody>
-        <tfoot>
-        <tr>
-            <td colspan="2" style="text-align: center">Footer</td>
-        </tr>
-        <tr>
-            <td>macht spa&szlig</td>
-            <td>Keine Nachteile</td>
-        </tr>
 
-        </tfoot>
-    </table>
+    </eon-ui-navigation-main>
+    <eon-ui-grid-control slot="main-sub" id="main-sub-T-shirts">
+        <eon-ui-grid-control-column slot="column-1">
+            <eon-ui-navigation-flyout-link large=""
+                                           target="_self" text="T-Shirts">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="../index_Tag_3.html" text="Nike"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="../index_Tag_3.html" text="Adidas"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
+            <eon-ui-navigation-flyout-link href="../index_Tag_3.html" text="Lacoste"
+                                           target="_self">
+            </eon-ui-navigation-flyout-link>
 
-</article>
-</body>
-</html>
+        </eon-ui-grid-control-column>
+    </eon-ui-grid-control>
+</eon-ui-navigation>
+
+<eon-ui-section background-color="ultralightgrey">
+    <eon-ui-grid-control>
+        <eon-ui-grid-control-column slot="column-1">
+            <eon-ui-page-header
+                    scheme="turquoise"
+                    show-content="true"
+                    headline-position="top"
+                    contrast-bars="true"
+                    color-bars="true"
+                    color-bar-offset="true">
+                <eon-ui-headline slot="header-headline" scheme="Bordeaux" size="h1" text="Angebote"
+                                 color-bars="bordeaux"></eon-ui-headline>
+                <eon-ui-text slot="header-content" text-style="abstract">Entdecken sie unsere neuen
+                    Angebote.
+                </eon-ui-text>
+                <eon-ui-headline slot="header-subheadline" size="h5"
+                                 text="Unsere Besten Angebote"></eon-ui-headline>
+            </eon-ui-page-header>
+            <eon-ui-rte-renderer rte-source="aem" content='
+                <ol>
+    <li><a target="_blank" rel="nofollow" href="https://www.zalando.de/jordan-air-1-mid-sneaker-high-blackgym-redparticle-greywhite-joc12n001-q28.html">Günstigste
+        Alternative</a></li>
+    <li><a target="_blank" rel="nofollow" href="https://www.zalando.de/jordan-air-1-sneaker-low-armory-navywhiteblack-joc12o006-k14.html">Durschnitt</a>
+    </li>
+    <li><a target="_blank" rel="nofollow" href="https://www.zalando.de/jordan-air-1-sneaker-low-joc12o006-q11.html">Durschnitt</a>
+    </li>
+    <li><a target="_blank" rel="nofollow" href="https://www.zalando.de/jordan-sneaker-low-blackarctic-orangewhite-joc12o006-q15.html">Teuerste
+        Alternative</a></li>
+</ol>'></eon-ui-rte-renderer>
+
+
+        </eon-ui-grid-control-column>
+    </eon-ui-grid-control>
+</eon-ui-section>
 
 
 
